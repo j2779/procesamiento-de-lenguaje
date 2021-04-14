@@ -10,3 +10,7 @@ def Login(request):
 
 def Index(request):
     return render(request, 'Index.html')
+
+
+def Registro(request):
+    return render(request, 'Registro.html')
