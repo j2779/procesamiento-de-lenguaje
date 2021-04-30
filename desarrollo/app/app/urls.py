@@ -17,10 +17,10 @@ from django.contrib import admin
 from django.urls import path
 
 from core.views import Login, Registro,Index
-
+from core.login.views import LoginFormView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('Index/', Index),
-    path('Login/', Login),
+    path('Login/', LoginFormView.as_view()),
     path('Registro/', Registro)
 ]
